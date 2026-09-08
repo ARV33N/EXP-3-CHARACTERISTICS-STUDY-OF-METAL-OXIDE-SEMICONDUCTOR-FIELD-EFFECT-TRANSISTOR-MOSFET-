@@ -8,20 +8,20 @@ To simulate the drain and transfer characteristics of a MOSFET using LTspice sof
 •	DC voltage sources
 •	Voltage/current probes
 # THEORY
-# Transfer Characteristics
+# 1. Transfer Characteristics
 In MOSFET applications, the input signal is the gate-to-source voltage VGS and the output is the drain current ID. The ability of a MOSFET to amplify the signal is given by the output/input ratio called transconductance.
 
-# Transconductance:
+# 2. Transconductance:
 gm = dID / dVGS    (with VDS kept constant)
 The transfer characteristic represents the relationship between ID and VGS for a constant VDS.
 
-# Drain Characteristics
+# 3. Drain Characteristics
 A MOSFET operates in three regions:
 1.	Cut-off region
 2.	Linear/Ohmic region
 3.	Saturation region
 
-# Cut-off Region: The MOSFET is in cut-off when VGS < VT. The drain current is approximately zero.
+# 4. Cut-off Region: The MOSFET is in cut-off when VGS < VT. The drain current is approximately zero.
 Linear Region: The MOSFET operates in the linear region when VGS > VT and VDS < (VGS − VT).
 Saturation Region: The MOSFET operates in saturation when VGS > VT and VDS ≥ (VGS − VT).
 Drain resistance is obtained from the slope of the drain characteristic:
@@ -48,10 +48,10 @@ rd = dVDS / dID    (with VGS kept constant)
 8.	Determine the drain resistance rd from the slope of the drain characteristic.
 # OBSERVATION
 # A. Transfer Characteristics
-<img width="596" height="397" alt="image" src="https://github.com/user-attachments/assets/21f0b018-5f4f-4023-a7a5-640292b2236a" />
+<img width="1097" height="676" alt="image" src="https://github.com/user-attachments/assets/5a54b137-fbcf-4d1c-84b8-9afea9d4b1fb" />
 
 # B. Drain Characteristics
-<img width="577" height="347" alt="image" src="https://github.com/user-attachments/assets/63367bcf-9f82-43c6-a838-de324e9e7e70" />
+<img width="1107" height="588" alt="image" src="https://github.com/user-attachments/assets/4a3d42c8-3da2-4d43-b3c8-439db3b44627" />
 
 # PRECAUTIONS
 •	Check the MOSFET terminal connections before starting the simulation.
